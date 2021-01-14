@@ -1,0 +1,598 @@
+html{
+    width: 100%;
+    margin: 0;
+    font-family: serif;
+    border: 2px solid black;
+}
+body{
+    margin: 0;
+   background-color: white; 
+}
+header, main,footer{
+    width: 80%;
+    margin: auto;
+    outline:  5px solid black;
+}
+header{
+   display: flex;
+   background-image: url(image/full-bloom.png);
+  background-color: #808080;
+  background-blend-mode: soft-light;
+  margin: 5px auto;
+}
+header a{
+    text-decoration: none;
+}
+.header-logo{
+    color: #ffd700;
+    text-shadow: 6px 5px 6px black;
+    flex: 3;
+}
+.header-logo p{
+    margin: 0 0 0 5px;
+    height: clamp(15px, 15px + 3vw, 50px);
+    font-size: clamp(1rem, 1rem + 1vw, 2rem);
+}
+.login{
+    flex: 1;
+}
+.login button{
+    margin: 10px 10px 0 0;
+    float: right;
+}
+                                         /* 共通メイン */
+
+
+main{
+    background-image: url(image/full-bloom1.png);
+}                                         
+.main-logo{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: table;
+    margin: 0px;
+    line-height: 0;
+    background-image: url(image/641.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.main-logo p{
+    color: gold;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: clamp(3rem, 3rem + 6vw, 9rem);
+    text-align: center;
+    display: table-cell;
+    padding-top: 31px;
+    text-shadow: 6px 5px 6px black;
+}
+.main-logo img{
+    width: 100%;
+    height: 400px;
+}
+#global_navi {
+	padding: 0px;
+    margin:  0px;
+    font-size: 30px;
+}
+.g-n-logo p{
+    width: 25%;
+    margin: 0px ;
+    padding: 0px ;
+    float: left;
+    background-image: url(image/full-bloom.png);
+    text-align: center;
+    border-bottom: 10px solid rgb(120 80 161 / 81%);
+    /* outline: auto; */
+}
+
+/* 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　共通フッター */
+footer{
+    margin: 5px auto;
+}
+.footer_container{
+    border-bottom: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 2vw;
+    background-image: url(image/full-bloom.png);
+    background-color: gray;
+    background-blend-mode: soft-light;
+}
+.footer_container ul{
+    list-style: none;
+    padding: 0;
+}
+#footer_home{
+    flex:0.8;
+    padding-left: 5vw;
+}
+#footer_teamsyoukai{
+    flex: 1;
+}
+#footer_seiseki{
+    flex: 0.7;
+}
+#footer_contact{
+    flex: 1.3;
+}
+.footer_top{
+    list-style: outside;
+    font-size: 3vw;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+                                                /* HOME */
+
+ .index-main-container{
+     display: table;
+     width: 100%;
+     margin: 0;
+ }                 
+ .index-main-item{
+     display: table-cell;
+     width: 100%;
+     border-top: 5px solid black;
+ }                              
+.index-main-contents{
+    /* background-color: steelblue; */
+    display: grid;
+    grid-template:
+    "......."100px
+    "main-a1"450px
+    "......."50px
+    "main-a2"450px
+    "......."100px
+    "main-a3"450px
+    "main-a4"450px
+    "......."100px
+    "main-a5"300px
+    "......."50px
+    "main-a6"300px
+    "......."50px
+    ;
+}
+.main-a1{
+    grid-area:main-a1 ;
+}
+#slideBox{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+#prev,#next{
+    flex: 1;
+}
+#prev img,#next img{
+    width: 30%;
+}
+#slide_image{
+    width: min(70vw,600px);
+    height: auto;
+    border: 2px solid #ddd;
+    box-shadow: -1px 5px 20px 0px black;
+}
+.main-a2{
+    grid-area:main-a2 ;
+}
+.main-a2-topic{
+    overflow: scroll;
+    height: 400px;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    background-image: url(image/full-bloom.png);
+}
+.main-a2 h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.main-a2 ul{
+    font-size: clamp(5px, 5px + 1vw, 16px);
+}
+.main-a2 li{
+    margin-bottom: 5px;
+}
+.main-a2 a{
+    color: #0c0cfb;
+}
+#main-a3{
+    grid-area: main-a3;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+}
+.m-a3Space{
+    flex: 1;
+    background-image: url(image/full-bloom.png);
+    background-color: #f7b48a61;
+    background-blend-mode: soft-light;
+    margin: 0;
+    border: solid 1px black;
+}
+#main-a3 iframe{
+    flex: 4;
+    height:99.5%;
+    margin: 0 auto;
+    border: none;
+}
+#main-a4{
+    grid-area: main-a4;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#main-a4 h1{
+    margin: 20px 0 0 0;
+    text-align: center;
+    flex: 1;
+}
+#main_a4{
+    flex: 9;
+    width: 75%;
+    margin: 0 auto;
+    border: 3px solid;
+    height: 150px;
+    background-image: url(image/full-bloom.png);
+}
+#main_a4 ul{
+    margin-bottom: 0;
+}
+.main_a4_month{
+    font-size: 30px;
+    list-style: none;
+    text-align: center;;
+}
+.main-a5{
+    grid-area:main-a5 ;
+    display: flex;
+}
+.main-a5 img{
+    margin: 0 auto;
+    display: block;
+}
+.mobile{
+    display: none;
+}
+.main-a6{
+    grid-area:main-a6 ;
+    display: flex;
+}
+.main-a6 img{
+    margin:  0 auto;
+
+}
+
+
+                                                           /*チーム紹介*/
+
+
+.team-syoukai{
+    width: 100%;
+}
+.team-syoukai h1{
+    border-bottom: 2px solid #f7b48a;
+    color: rgba(240, 240, 10, 0.80);
+    text-shadow: 6px 5px 6px black;
+    background-color: #0000006b;
+    background-image: url(image/full-bloom.png);
+    background-blend-mode: soft-light;
+}
+.c-container{
+    display: flex;
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 auto;
+}
+.c1-container{
+    height: calc(100%/5);
+   
+}
+#content1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+.c1-logo{
+   flex: 6;
+}
+.t-s-navi {
+  flex: 4;
+}
+.t-s-navi nav{
+    float: right;
+    width: max-content;
+    border: 2px solid #f7b48a;
+    background-image: url(image/full-bloom.png);
+    background-blend-mode: soft-light;
+    height: 250px;
+    margin: 10px;
+    padding-right: 30px;
+}   
+.t-s-navi li{
+     margin-left: 10px;
+     margin-bottom: 35px;   
+}
+.c2-contaier{
+    height: calc(100%/5);
+}
+
+#content2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+.c2-logo{
+    flex: 4;
+}
+.c2-photo{
+    flex: 3;
+}
+.c2-photo img{
+    margin: 68.4px 0 0 0;
+    border: 2px solid #f7b48a;
+    width: 100%;
+    height: 70%;
+    
+}
+.c2-map{
+    flex: 3;
+}
+.c2-map iframe{
+    margin: 68.4px 0 0 10px;
+    border: 2px solid #f7b48a;
+    width: 100%;
+    height: 70%;
+}
+#content3{
+    height: calc(100%/5);
+}
+#content4{
+    height: calc(100%/5);
+}
+#content5{
+    height: calc(100%/4);
+}
+
+
+/* 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝＝＝＝＝＝＝＝成績＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.seiseki{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.seiseki img{
+    width: 60vw;
+    margin: 5px auto;
+}
+
+/* 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝＝＝＝＝＝＝＝コンタクトフォーム＝＝＝＝＝＝＝＝＝ */
+.contact_container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 1500px;
+    margin: 0 auto;
+}
+.contact_header{
+   flex: 2;     
+}
+.rei{
+    color: #808080;
+    border-bottom: 2px solid #808080;
+}
+.contact_header li{
+    margin-bottom: 20px;
+}
+.contactBox{
+    background-image: url(image/full-bloom.png);
+    border: 2px solid black;
+    padding: 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contactBox h2{
+    margin: 0 auto;
+    
+    font-size: 1.2em;
+}
+.boxTitle{
+    background: linear-gradient(transparent 30%,#00e7ff73 90%);
+}
+#taikenButton{
+    margin-right: 50px;
+    background: rgb(149 247 207);
+}
+#siaiButton{
+background-color: rgb(202 178 249);
+}
+.contact_main{
+    flex: 6;
+}
+.contact_main_container{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    border: 5px solid black;
+    margin-bottom: 50px;
+}
+#contact_form_taiken{
+    display: none;
+    flex: 1;
+}
+#contact_form_siai{
+    display: none;
+    flex: 1;
+}
+.contact_main iframe{
+    width: 100%;
+    height: 100%;
+}
+                                        /* ==========ログイン（管理人ページ）＝＝＝＝＝＝＝ */
+
+
+
+#monthSchedule{
+    height: 250px;
+    width: 90%;
+}
+#sample{
+    height: 250px;
+    border: 2px solid black;
+    width: 90%;
+    
+}
+
+           /* 　　　　　　　　　　　　　　　　　　　　　　  ーーーーメディアクエリーーーー */
+@media(max-width: 1010px){
+    header, main,footer{
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+    .login button{
+        margin: 3px;
+    }
+    .main-logo{
+        height: 200px;
+    }
+    .main-logo p{
+        font-size: 3rem;
+    }
+    #global_navi {
+        font-size: 1rem;
+    }
+   .index-main-contents{
+    display: grid;
+    grid-template:
+        "......."20px
+        "main-a1"200px
+        "......."50px
+        "main-a2"250px
+        "......."50px
+        "main-a3"350px
+        "main-a4"250px
+        "......."50px
+        "main-a5"200px
+        "......."50px
+        "main-a6"200px
+        "......."50px;
+       
+   }
+   .main-a2-topic{
+        height: 200px;
+        width: 90%;
+   }
+   .main-a2 h1{
+       font-size: 1.5rem;
+   }
+   #main-a3{
+       width: 90%;
+   }
+   .m-a3Space{
+       display: none;
+   }
+   #main-a4 h1{
+    font-size: 1.5rem;
+   }
+   .main_a4_month{
+    margin: 5px 15vw 5px 0;
+    font-size: 20px;
+   }
+   .main-a5 img{
+       width: 300px;
+   }
+   .pc{
+       display: none;
+   }
+   .main-a6 img{
+       width: 300px;
+   }
+          /* 　　　　　　　　　　　　　　ーーーーーーーー〜フッターモバイルーーーーーーーー */
+    .wrapper{
+        height: 100px;
+    }      
+    .footer_container li{
+        margin-bottom: 5px;
+    }
+    /* 　　　　　　　　　　　　　　　ーーーーーーーーーーーチーム紹介ーーモバイルーーーーーーーー */
+
+    .team-syoukai p{
+        font-size: 3.8vw;
+    }
+    #content1{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+    }
+    .c1-logo{
+        width: 100%;
+    }
+    .t-s-navi nav{
+        display: none;
+    }
+    .c2-contaier{
+        height: calc(100%/5);
+    }
+    #content2{
+        flex-direction: column;
+    }
+    .c2-photo{
+        display: none;
+    }
+    .c2-map{
+        height: 250px;
+        width: 100%;
+        display: flex;
+        border: 2px solid #f7b48a;
+    }
+    .c2-map iframe{
+        height: 100%;
+        margin: 0;
+    }
+                                                    /* ===========コンタクトフォームモバイル＝＝＝＝＝＝＝＝ */
+
+    .contact_container{
+        height: 100%;
+    }
+    .contactBox{
+        width: 90%;
+    }
+    .contact_main_container{
+        border: none
+    }
+    #contact_form_taiken{
+        height: 600px;
+    }
+    #contact_form_siai{
+        height: 600px;
+    }
+    .contact_main iframe{
+        border: 3px solid black;
+    }
+}
